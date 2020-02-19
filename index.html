@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>App1</title>
+    <link href="./hanoi.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./hanoi.js"></script>
+</head>
+<body>
+    <article id="instructions">
+        <header>
+            <h1>The <span id="game-name">Towers Of Hanoi</span> is a mathematical game or puzzle.</h2>
+        </header>
+        <section id="puzzle-info">
+            <h1>It consists of three rods and a number of disks of different sizes, 
+               which can slide onto any rod. The puzzle starts with the disks in a 
+               neat stack in ascending order of size on one rod, the smallest at the top, 
+               thus making a conical shape.
+            </h1>
+        </section>
+        <section id="puzzle-objective">
+            <h1>The objective of the puzzle is to move the entire stack to another rod, 
+               obeying the following simple rules:
+            </h1>
+            <h1 class="rules">1. Only one disk can be moved at a time.</h3>
+            <h1 class="rules">2. Each move consists of taking the upper disk from one of 
+                        the stacks and placing it on top of another stack or on an empty rod.</h3>
+            <h1 class="rules">3. No larger disk may be placed on top of a smaller disk.</h3>
+        </section>
+        <section id="skip-section">
+            <button id="skip-button">Skip Instructions</button>
+        </section>
+    </article>
+    <div id="all-container">
+        <div class="decoration">
+            <div>
+                <h1 class="stars">&star;<br>&star;<br>&star;<br>&star;<br>&star;</h1>
+            </div>
+        </div>
+        <div id="tower-container">
+            <header id="app-hdr">
+                <h1>Towers of Hanoi App</h1>
+                <div id="div-timer">
+                    <h3 id="timer-msg">Time Elapsed: <span id="time-elapsed"></span></h3>
+                </div>
+            </header>
+
+            <div id="all-towers">
+                <svg id="tower1-post">
+                    <rect id="post1"/>
+                </svg>
+                <svg id="tower2-post">
+                    <rect id="post2"/>
+                </svg>
+                <svg id="tower3-post">
+                    <rect id="post3">
+                </svg>
+                <aside id="oops-msg">Oops</aside>
+               <div id="tower1">
+                    <div id="tower1-block1" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block2" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block3" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block4" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block5" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block6" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-block7" class="tower1 block" draggable="true">
+                    </div>
+                    <div id="tower1-base" class="base">
+                    </div>
+                </div>
+                <div id="tower2">
+                    <div id="tower2-block1" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block2" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block3" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block4" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block5" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block6" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-block7" class="tower2 block" draggable="true">
+                    </div>
+                    <div id="tower2-base" class="base">
+                    </div>
+                </div>
+                <div id="tower3">
+                    <div id="tower3-block1" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block2" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block3" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block4" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block5" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block6" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-block7" class="tower3 block" draggable="true">
+                    </div>
+                    <div id="tower3-base" class="base">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decoration">
+            <div>
+                <h1 class="stars">&star;<br>&star;<br>&star;<br>&star;<br>&star;</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

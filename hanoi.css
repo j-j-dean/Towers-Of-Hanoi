@@ -1,0 +1,252 @@
+﻿body {
+    font-family: Arial, 'Times New Roman';
+}
+
+#all-container {
+    display: none;
+    flex-direction: row;
+}
+
+#instructions > header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid black;
+    text-align: center;
+}
+
+section {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#puzzle-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+#puzzle-objective {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#game-name {
+    color: blue;
+}
+
+.rules:first-line {
+    text-indent: -20px;
+}
+
+.rules {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#skip-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#skip-button {
+    font-size: 24px;
+    border-width: 5px;
+}
+
+.stars {
+    margin-top: 40px;
+    font-size: 500%;
+    text-align: center;
+    color: green;
+}
+
+.reset {
+    margin-left: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+/****************
+update for small screens
+*
+*/
+@media only screen and (min-device-width: 321px) {
+    .decoration {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    .decoration {
+        display: none;
+    }
+}
+
+#tower-container {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    height: 100%;
+}
+
+#app-hdr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid black;
+    margin-top: 10px;
+    text-align: center;
+    color: green;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#all-towers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    height: 400px;
+    width: 100%;
+    z-index: 0;
+}
+
+#tower1-post,#tower2-post,#tower3-post {
+    position: absolute;
+    top: 30%;
+}
+#tower2-post {
+    position: absolute;
+    top: 30%;
+}
+#tower3-post {
+    position: absolute;
+    top: 30%;
+}
+
+@media only screen and (min-device-width: 321px) {
+    #tower1-post {
+        left: 30%;
+    }
+    #tower2-post {
+        left: 50%;
+    }
+    #tower3-post {
+        left: 70%;
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    #tower1-post {
+        left: 17%;
+    }
+    #tower2-post {
+        left: 50%;
+    }
+    #tower3-post {
+        left:83%;
+    }
+}
+
+#oops-msg {
+    position: absolute;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 2px;
+    left: 24%;
+    top: 50%;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#post1,#post2,#post3 {
+    width: 8px;
+    height: 100%; // height reset in javascript
+    fill="black";
+}
+
+#tower1,#tower2,#tower3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 33%
+}
+
+#tower1 {
+    margin-left: 5px;
+    marin-right: 10px;
+}
+#tower2 {
+    margin-left: 10px;
+}
+#tower3 {
+    margin-left: 10px;
+}
+
+.block,.base{
+    z-index: 1;
+}
+
+#tower1-block1,#tower1-block2,#tower1-block3,#tower1-block4,#tower1-block5,#tower1-block6,#tower1-block7,#tower1-base {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    line-height: 100%;
+    font-size: 150%;
+    padding-top: 8%;
+}
+#tower2-block1,#tower2-block2,#tower2-block3,#tower2-block4,#tower2-block5,#tower2-block6,#tower2-block7,#tower2-base {
+    height: 100%;
+    width: 100%;
+     text-align: center;
+    color: yellow;
+    line-height: 100%;
+    font-size: 150%;
+    padding-top: 8%;   
+}
+#tower3-block1,#tower3-block2,#tower3-block3,#tower3-block4,#tower3-block5,#tower3-block6,#tower3-block7,#tower3-base {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    line-height: 100%;
+    font-size: 150%;
+    padding-top: 8%;
+}
+
+#tower1-block1 {
+    width: 14%;
+}
+#tower1-block2 {
+    width: 28%;
+}
+#tower1-block3 {
+    width: 42%;
+}
+#tower1-block4 {
+    width: 56%;
+}
+#tower1-block5 {
+    width: 69%;
+}
+#tower1-block6 {
+    width: 83%;
+}
+#tower1-block7 {
+    width: 97%;
+}
+#tower1-base,#tower2-base,#tower3-base {
+    height: 30%;
+    visibility: visible;
+    background-color: brown;
+}
